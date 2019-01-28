@@ -1,7 +1,110 @@
-img {
-  padding-top: 109px;
+body {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+p body {
+  font-size: 12px;
+}
+
+a {
+  font-size: 12px;
+  display: inline-block;
+  opacity: 0.65;
+}
+
+.header {
 
 }
-.upper-part {
-  width: auto;
+
+#uleft {
+  position: relative;
+  left: 30px;
+}
+
+#uright {
+  position: relative;
+  right: 30px;
+  float: right;
+  margin-left: 15px;
+}
+
+img {
+  padding-top: 170px;
+  display: block;
+  margin:auto;
+}
+
+.searchbox {
+  display: block;
+  width: 600px;
+  height: 40px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 18px;
+  margin: auto;
+  box-shadow: 0 3px 2px lightgrey;
+}
+
+/* .searchbox:active {
+  border: 1px solid lightgrey;
+} need to work on this*/
+
+.middle-part {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.middle-part p, .middlepart a {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 5px 15px;
+  margin:auto;
+  margin-left: 10px;
+  border: none;
+  height: 40px;
+  background-color: #F2F2F6;
+  color: hsla(0, 0%, 0%, 0.6);
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.country {
+  border-top: 1px solid lightgrey;
+  background-color: #F2F2F6;
+  margin-bottom: 0;
+  height: 40px;
+}
+
+.country p {
+  margin-left: 30px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.footnotes {
+  border-top: 1px solid lightgrey;
+  background-color: #F2F2F6;
+  height: 40px;
+  margin-top: 0;
+}
+
+#bleft {
+margin-left: 30px;
+}
+
+#bright {
+  float:right;
+  margin-right: 30px;
 }
