@@ -1,3 +1,8 @@
+* {
+margin: 0;
+padding: 0;
+}
+
 body {
   margin-top: 20px;
   font-family: Arial, sans-serif;
@@ -8,18 +13,35 @@ p body {
 }
 
 a {
-  font-size: 12px;
   display: inline-block;
-  opacity: 0.65;
+  color: black;
+  opacity: 0.75;
+  text-decoration: none
 }
 
-.header {
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
+a:focus {
+  text-decoration: underline;
+}
+
+header {
+  padding-top: 3px;
+  font-size: 13px;
+  display: block;
+  color: black;
+}
+
+.store {
+  padding-left: 15px;
 }
 
 #uleft {
   position: relative;
-  left: 30px;
+  left: 17px;
 }
 
 #uright {
@@ -29,10 +51,54 @@ a {
   margin-left: 15px;
 }
 
-img {
+.icon {
+  display: inline-block;
+  height: 23px;
+  opacity: 0.55;
+  bottom: 5px;
+}
+
+.icon2 {
+  display: inline-block;
+  height: 30px;
+  bottom: 6px;
+  opacity: 0.75;
+}
+
+.icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon2:hover {
+  cursor: pointer;
+}
+
+.upper-part {
+  margin-top: 15px;
+}
+
+.googlelogo {
   padding-top: 170px;
   display: block;
   margin:auto;
+  padding: blue;
+}
+
+.googlelogo:hover {
+  cursor: pointer;
+}
+
+
+.assistant {
+  height: 22px;
+  position: relative;
+  display: block;
+  margin:auto;
+  padding-left: 620px;
+  bottom: 48px;
+  z-index: 1;     /*  this kinda works but the margin hides the textarea*/
+
 }
 
 .searchbox {
@@ -43,21 +109,43 @@ img {
   border-radius: 3px;
   font-size: 18px;
   margin: auto;
-  box-shadow: 0 3px 2px lightgrey;
+  box-shadow: 0 1px 2px lightgrey;
+  padding-left: 16px;
+  padding-right: 60px;
+  z-index: 10;
+
 }
 
-/* .searchbox:active {
-  border: 1px solid lightgrey;
-} need to work on this*/
+.searchbox:focus {
+  border: solid lightgrey;
+  border-width: 1px;
+  outline: none;
+  box-shadow: 0 3px 3px rgba(211, 211, 211, 0.75), 1px 0 1px rgba(211, 211, 211, 0.75), -1px 0 1px rgba(211, 211, 211, 0.75);
+}
+
+.searchbox:hover {
+  border-width: 1px;
+  box-shadow: 0 3px 3px rgba(211, 211, 211, 0.75), 1px 0 1px rgba(211, 211, 211, 0.75), -1px 0 1px rgba(211, 211, 211, 0.75);
+}
 
 .middle-part {
-  border: 1px solid black;
+  margin-top: 10px;
   text-align: center;
+}
+
+.middle-part a {
+  font-size: 13px;
+  color: #1a0dab !important;
+}
+
+.middle-part p {
+  opacity: 0.75;
+
 }
 
 .middle-part p, .middlepart a {
   display: inline-block;
-  font-size: 18px;
+  font-size: small;
 }
 
 .button {
@@ -66,14 +154,22 @@ img {
   padding: 5px 15px;
   margin:auto;
   margin-left: 10px;
-  border: none;
+  border: 1px solid white;
+  border-radius: 3px;
   height: 40px;
-  background-color: #F2F2F6;
+  background-color: hsla(0, 0%, 95%, 0.9);
   color: hsla(0, 0%, 0%, 0.6);
   font-weight: bold;
 }
 
+.button:hover {
+  border: 1px solid lightgrey;
+  color: hsla(0, 0%, 0%, 1);
+  cursor: pointer;
+}
+
 footer {
+  font-size: 13px;
   position: absolute;
   bottom: 0;
   left:0;
@@ -88,23 +184,38 @@ footer {
 }
 
 .country p {
+  position: relative;
   margin-left: 30px;
-  margin-bottom: 0px;
   font-size: 15px;
+  opacity: 0.55;
+  border: 1 solid red;
+  top: 10px;
 }
 
 .footnotes {
   border-top: 1px solid lightgrey;
-  background-color: #F2F2F6;
+  background-color: #f2f2f2;
   height: 40px;
   margin-top: 0;
 }
 
-#bleft {
-margin-left: 30px;
+.advertising {
+  margin-left: 30px;
+}
+
+.business {
+  margin-left: 23px;
 }
 
 #bright {
   float:right;
   margin-right: 30px;
 }
+
+.footnotes a {
+  margin-top: 12px;
+}
+
+
+/* TBD:
+google assistant icon
